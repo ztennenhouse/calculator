@@ -1,5 +1,8 @@
 
-
+@font-face {
+    font-family: calculatorFont;
+    src: url(Digital7-1e1Z.ttf)
+}
 body {
     display: flex;
     flex-direction: column;
@@ -28,13 +31,26 @@ body {
     border: solid black;
     width: 250px;
     margin-top: 10px;
+    align-items: center;
+    text-align: right;
+    font-family: calculatorFont;
+    background-color: darkolivegreen;
+    color: white;
 }
+
 .firstrow {
     display: flex;
     flex-direction: row;
-    padding-top: 25px;
+    padding-top: 5px;
     width: 250px;
     justify-content: space-evenly;
+}
+.zerorow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 250px;
+    padding-top: 20px;
 }
 .secondrow {
     display: flex;
@@ -57,12 +73,35 @@ body {
     justify-content: space-evenly;
 
 }
-
+.topbutton {
+    display: flex;
+    border: solid black;
+    height: 40px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+}
 .button {
     display: flex;
     border: solid black;
-    height: 75px;
+    height: 60px;
     width: 50px;
     align-items: center;
     justify-content: center;
+}
+.resulttext {
+    font-size: 50px;
+    word-wrap: break-word;
+    max-height: 100px;
+}
+.resultOff {
+    height: 100px;
+    border: solid black;
+    width: 250px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: right;
+    font-family: calculatorFont;
+    background-color: black;
+    color: transparent;
 }
